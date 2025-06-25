@@ -9,7 +9,7 @@
 .display-flex{
     display: flex;
 }
-.btn-primary{
+.btn-primary1{
     width: 197px;
     height: 50px;
     padding: 10px;
@@ -69,7 +69,7 @@ font-size: 2rem;
     justify-content: space-around;
     align-items: center;
     max-width: 1160px;
-    border: #05D4DF 1px solid;
+    border: orange 1px solid;
     margin: 0 auto;
 }
 .school-logo{
@@ -85,14 +85,50 @@ font-size: 2rem;
     
     font-size: 1.2rem;
 }
+.btn-primary{
+     width: 197px;
+    height: 50px;
+    padding: 10px;
+    background-color: rgba(254, 163, 1, 1) ;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border: none;
+}
 .menu{
     display: none;
+}
+/* banner style */
+
+.banner{
+  gap: 50px;
+  max-width: 1160px;
+  /* border: #05D4DF 1px solid; */
+  margin: 0 auto;
+}
+.banner-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.banner-title{
+    font-size: 3.5rem;
+    margin-bottom: 0;
+}
+.banner-description{
+    font-size: 1.2rem;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+#banner-btn{
+    background-color: rgba(17, 17, 17, 1);
 }
 /* responsive media query */
 @media screen and (max-width:576px){
    .school ,
    .nav-links,
-   button {
+   .btn-primary{
     display: none;
    }
    .menu{
@@ -102,4 +138,13 @@ font-size: 2rem;
     gap: 270px; 
    align-items: center;
    }
+   .banner{
+    flex-direction: column-reverse;
+   }
+   .banner-content{
+   text-align: center;
+   /* justify-content: center; */
+   align-items: center;
+   }
+
 }
