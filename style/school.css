@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.quicksand{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* shared style */
+.display-flex{
+    display: flex;
+}
+.btn-primary{
+    width: 197px;
+    height: 50px;
+    padding: 10px;
+    background-color: rgba(254, 163, 1, 1) ;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border: none;
+}
+/* black */
+.black{
+    color: rgba(17, 17, 17, 1);
+}
+/* black 1 */
+.black1{
+    color: #000000;
+}
+/* black2 */
+.black2{
+    color: #202020;
+}
+/* gray1 */
+.gray1{
+    color: #808080;
+}
+/* .gray2 */
+.gray2{
+    color: #808080;
+}
+/* sky blue */
+.sky-blue{
+    color: rgba(1, 172, 253, 1);
+}
+/* navy blue */
+.navy-blue{
+    color: #05D4DF;
+}
+/* orange */
+.orange{
+   color: rgba(254, 163, 1, 1);
+}
+/* purple */
+.purple{
+    color: #5D58EF;
+}
+.bold{
+    font-weight: bold;
+}
+/* header style */
+/* nav style */
+
+.school{
+font-size: 2rem;
+}
+.navbar{
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1160px;
+    border: #05D4DF 1px solid;
+    margin: 0 auto;
+}
+.school-logo{
+    margin-right: 11px;
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 32px;
+}
+.nav-link{
+    text-decoration: none;
+    
+    font-size: 1.2rem;
+}
+.menu{
+    display: none;
+}
+/* responsive media query */
+@media screen and (max-width:576px){
+   .school ,
+   .nav-links,
+   button {
+    display: none;
+   }
+   .menu{
+    display: block;
+   }
+   .school-logo{
+    gap: 270px; 
+   align-items: center;
+   }
+}
