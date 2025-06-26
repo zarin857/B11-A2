@@ -297,6 +297,9 @@ main{
     margin-left: 130px;
    margin-top: -50px;
 }
+.black-btn{
+    margin-left: 500px;
+}
 /* responsive media query */
 @media screen and (max-width:576px){
    .school ,
