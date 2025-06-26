@@ -54,7 +54,7 @@
 }
 /* purple */
 .purple{
-    color: #5D58EF;
+    color: #5d58ef;
 }
 .bold{
     font-weight: bold;
@@ -124,6 +124,75 @@ font-size: 2rem;
 #banner-btn{
     background-color: rgba(17, 17, 17, 1);
 }
+/* main style */
+main{
+      background-image: url(../assets/bg.png);
+     
+}
+/* curriculum section style */
+.curriculum{
+     max-width: 1160px;
+     border: #000000 1px solid;
+     margin: 0 auto; 
+   
+}
+.curriculum-title{
+    font-size: 2.9rem;
+    text-align: center;
+}
+/* card style */
+.curriculum-box{
+    gap: 28px;
+  
+}
+.card1, .card2, .card3{
+    border: #05D4DF 1px solid;
+    border-radius: 18px;
+      justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 28.3px rgba(0, 0, 0, 0.05);
+}
+.card1{
+    background-image: linear-gradient(to bottom,  rgba(1, 172, 253, 0.1), rgba(1, 172, 253, 0));
+}
+.card2{
+    background-image: linear-gradient(to bottom,  rgba(254, 163, 1, 0.1),  rgba(254, 163, 1, 0));
+}
+.card3{
+    background-image: linear-gradient(to bottom, rgba(93, 88, 239, 0.1), rgba(93, 88, 239, 0));
+}
+.card-title{
+    font-size: 1.6rem;
+    }
+.card-description{
+    font-weight: 500;
+    text-align: center;
+}  
+#subtitle1{
+    color: rgba(1, 172, 253, 1);
+}
+#subtitle2{
+    color: rgba(254, 163, 1, 1);
+}
+#subtitle3{
+    color: #5d58ef;
+}
+.next-icons{
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.next-icon{
+    background-color: orange;
+    height: 60px;
+    width: 60px;
+    border-radius:50%;
+    border: none;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
 /* responsive media query */
 @media screen and (max-width:576px){
    .school ,
