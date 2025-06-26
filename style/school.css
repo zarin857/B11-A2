@@ -40,6 +40,10 @@
 .gray2{
     color: #808080;
 }
+/* gray3 */
+#gray3{
+    color: #666666;
+}
 /* sky blue */
 .sky-blue{
     color: rgba(1, 172, 253, 1);
@@ -127,6 +131,8 @@ font-size: 2rem;
 /* main style */
 main{
       background-image: url(../assets/bg.png);
+      max-width: 1160px;
+      margin: 0 auto;
      
 }
 /* curriculum section style */
@@ -139,19 +145,21 @@ main{
 .curriculum-title{
     font-size: 2.9rem;
     text-align: center;
+    
 }
-/* card style */
 .curriculum-box{
     gap: 28px;
-  
-}
+    margin-top: 80px;
+    }
+/* card style */
+
 .card1, .card2, .card3{
     /* border: #05D4DF 1px solid; */
     border-radius: 18px;
       justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 0 28.3px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 0 28.3px 0.94px rgba(0, 0, 0, 0.05)
 }
 .card1{
     background-image: linear-gradient(to bottom,  rgba(1, 172, 253, 0.1), rgba(1, 172, 253, 0));
@@ -166,9 +174,13 @@ main{
     font-size: 1.6rem;
     }
 .card-description{
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 1rem; 
     text-align: center;
 }  
+.card-subtitle{
+    font-size: 0.8rem;
+}
 #subtitle1{
     color: rgba(1, 172, 253, 1);
 }
@@ -192,7 +204,99 @@ main{
     color: #FFFFFF;
     margin-right: 10px;
 }
+/* our stories section style */
+.stories{
+   background-image: linear-gradient(to top, rgba(254, 163, 1, 0.2), rgba(254, 163, 1, 0)); 
+   display: block;
+    /* border: #05D4DF 1px solid;  */
+  }
+ #story1{
+    grid-area: story1;
+}
+#story2{
+    grid-area: story2;
+}
+#story3{
+    grid-area: story3;
+}
+#story4{
+    grid-area: story4;
+}
+#story5{
+    grid-area: story5;
+}
+.stories-box{
+    display: grid;
+    grid-template-areas: "story1 story1  story2 story3"
+                         "story1 story1  story2 story3"
+                         "story1 story1  story4 story5"
+                         "story1 story1  story4 story5";
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 18px;
+                         
 
+} 
+.stories-card{
+    /* border: #05D4DF 1px solid; */
+    border-radius: 16px;
+}
+.stories-card img{
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+#story1 .stories-card-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 61px;
+}
+#story2 .stories-card-title,
+#story3 .stories-card-title,
+#story4 .stories-card-title,
+#story5 .stories-card-title{
+    font-size: 0.9rem;
+    
+}
+.stories-card-description{
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #666666;
+}
+#story-title{
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
+#story-description{
+    margin-top: 47px;
+}
+#skyblue{
+    background-color: rgba(1, 172, 253, 1);
+    border-radius: 47px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-left: 20px;
+    margin-top: -100px;
+}
+#green{
+     background-color: #95B226;
+    border-radius: 47px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    /* position: relative;
+   right: 250px; */
+   margin-left: 130px;
+   margin-top: -50px;
+}
+#purple{
+    background-color:  #5d58ef;
+    border-radius: 47px;
+    font-weight: 400;
+    font-size: 0.9rem;
+      /* position: relative;
+   right: 250px; */
+    margin-left: 130px;
+   margin-top: -50px;
+}
 /* responsive media query */
 @media screen and (max-width:576px){
    .school ,
@@ -212,7 +316,8 @@ main{
     flex-direction: column-reverse;
    }
     .curriculum-box{
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: 1fr;
     }
    .banner-content{
    text-align: center;
