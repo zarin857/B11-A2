@@ -131,15 +131,14 @@ font-size: 2rem;
 /* main style */
 main{
       background-image: url(../assets/bg.png);
-      max-width: 1160px;
-      margin: 0 auto;
-     
-}
+     max-width: 1160px;
+      margin: 0 auto; 
+      }
 /* curriculum section style */
 .curriculum{
-     max-width: 1160px;
-     /* border: #000000 1px solid; */
-     margin: 0 auto; 
+     max-width: 1160px; 
+     /* border: #000000 1px solid;  */
+    margin: 0 auto;  
    
 }
 .curriculum-title{
@@ -207,8 +206,8 @@ main{
 /* our stories section style */
 .stories{
    background-image: linear-gradient(to top, rgba(254, 163, 1, 0.2), rgba(254, 163, 1, 0)); 
-   display: block;
-    /* border: #05D4DF 1px solid;  */
+   /* border: #05D4DF 1px solid;   */
+  
   }
  #story1{
     grid-area: story1;
@@ -231,8 +230,8 @@ main{
                          "story1 story1  story2 story3"
                          "story1 story1  story4 story5"
                          "story1 story1  story4 story5";
-    grid-template-columns: repeat(4, 1fr); 
-    grid-template-rows: repeat(4, 1fr); 
+    /* grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, 1fr);  */
     gap: 18px;
                          
 
@@ -274,7 +273,7 @@ main{
     border-radius: 47px;
     font-weight: 400;
     font-size: 0.9rem;
-    margin-left: 20px;
+     margin-left: 20px; 
     margin-top: -100px;
 }
 #green{
@@ -305,9 +304,13 @@ main{
    .school ,
    .nav-links,
    .btn-primary,
-    .next-icons{
+   .next-icons,
+    .hide {
     display: none;
    }
+    /* #story1{
+    display: none;
+   } */
    .menu{
     display: block;
    }
@@ -322,10 +325,22 @@ main{
         display: grid;
         grid-template-rows: 1fr;
     }
+    .stories-box{
+      grid-template-areas: 
+      "story2 story3"
+      "story4 story5";
+      grid-template-columns: 280px 280px;  
+     width: 100%;
+     }    
+    #banner-btn{
+       margin-left: 200px;
+    }                 
    .banner-content{
    text-align: center;
    /* justify-content: center; */
    align-items: center;
    }
-
+   #green, #purple{
+    margin-left: 20px;
+   }
 }
