@@ -5,6 +5,11 @@
   font-weight: 400;
   font-style: normal;
 }
+/* * */
+*{
+    margin: 0;
+    padding: 0;
+}
 /* shared style */
 .display-flex{
     display: flex;
@@ -299,6 +304,50 @@ main{
 .black-btn{
     margin-left: 500px;
 }
+/* #banner-btn{
+    margin-bottom: 0;
+} */
+/* footer style */
+.footer{
+    background-color: #05D4DF;
+    /* margin:0 auto; */
+}
+.footer-content{
+     /* max-width: 1071px;  */
+   /* border: #000000 1px solid;  */
+    gap: 100px; 
+     /* background-color: #05D4DF;  */
+     margin-left: 220px;
+    margin-right: 220px; 
+    /* margin-top: 0;  */
+   }
+ .edu{
+    gap: 5px;
+}
+.edu-title{
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+.edu-description{
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    margin-top: 35px;
+}
+.about li{
+    list-style: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.ab-sch{
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-bottom: 37px;
+}
+.touch .ab-sch{
+    margin-top: 37px;
+} 
+
 /* responsive media query */
 @media screen and (max-width:576px){
    .school ,
@@ -343,4 +392,10 @@ main{
    #green, #purple{
     margin-left: 20px;
    }
+   .footer-content{
+    flex-direction: column;
+   margin: auto;
+   margin-right: 300px;
+   }
+
 }
